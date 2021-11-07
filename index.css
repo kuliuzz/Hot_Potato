@@ -189,6 +189,7 @@ h1, p, a {
     font-size: 1.17rem !important;
     font-weight: bold;
 }
+
 .yellow {
     background-color: var(--yellow);
 }
