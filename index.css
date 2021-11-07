@@ -124,7 +124,7 @@ header {
 }
 
 main {
-    padding: 0px 16px 16px;
+    padding: 16px;
 }
 
 img.static-logo {
@@ -167,20 +167,28 @@ a.icon.soundcloud > img {
     /* display: flex;
     flex-wrap: wrap;
     width: 100%; */
+    margin-top: 16px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    max-height: 2000px;
 }
 .image-item {
-    width: 49%;
+    width: 48.8%;
     margin-bottom: 16px;
 }
 
-.image-item{
+.image-item {
     padding: 0px 8px;
 }
 .image-item img{
     object-fit: cover;
     width: 100%;
+    height: 100%;
+}
+
+h1, p, a {
+    font-size: 1.17rem !important;
+    font-weight: bold;
+}
+.yellow {
+    background-color: var(--yellow);
 }
