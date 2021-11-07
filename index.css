@@ -101,18 +101,50 @@ a:hover {
 
 /* custom styles */
 
+:root {
+    --yellow: #ecec03;
+  }
+
 body {
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
+    cursor: url(img/cursor.svg), auto;
+    min-height: 100vh;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 18px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+main {
+    padding: 0px 16px 16px;
+}
+
+img.static-logo {
+    width: 96%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 a:hover {
     cursor: pointer;
+    background-color: var(--yellow);;
 }
 a.icon > img {
     width: 28px;
@@ -120,4 +152,35 @@ a.icon > img {
 a.icon.soundcloud > img {
     width: 38px;
     margin-top: 7px;
+}
+
+.video-container {
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.image-gallery {
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 2000px;
+}
+.image-item {
+    width: 49%;
+    margin-bottom: 16px;
+}
+
+.image-item{
+    padding: 0px 8px;
+}
+.image-item img{
+    object-fit: cover;
+    width: 100%;
 }
