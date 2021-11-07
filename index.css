@@ -176,7 +176,9 @@ a.icon.soundcloud > img {
     width: 48.8%;
     margin-bottom: 16px;
 }
-
+.full {
+    width: 100%;
+}
 .image-item {
     padding: 0px 8px;
 }
@@ -215,9 +217,19 @@ h1, p, a {
     right: 0;
     left: 0;
     bottom: 0;
-    text-align: center;
-    line-height: 350px;
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+.gif-item a span{
+    color: darkgrey
 }
 .gif-item:hover a {
     z-index: 1;
+}
+.h600 {
+    min-height: 600px;
+}
+.w50 {
+    width: 50%;
 }
