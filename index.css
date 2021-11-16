@@ -176,7 +176,9 @@ a.icon.soundcloud > img {
     width: 48.8%;
     margin-bottom: 16px;
 }
-
+.full {
+    width: 100%;
+}
 .image-item {
     padding: 0px 8px;
 }
@@ -194,7 +196,10 @@ h1, p, a {
 .yellow {
     background-color: var(--yellow);
 }
-
+.yellow-2 {
+    color: var(--yellow);
+    background-color: black;
+}
 .gif-gallery {
     display: grid;
     grid-template-columns: var(--gif-size) var(--gif-size) var(--gif-size);
@@ -215,9 +220,38 @@ h1, p, a {
     right: 0;
     left: 0;
     bottom: 0;
-    text-align: center;
-    line-height: 350px;
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+.gif-item a span{
+    color: darkgrey
 }
 .gif-item:hover a {
     z-index: 1;
+}
+.h600 {
+    min-height: 600px;
+}
+.w50 {
+    width: 50%;
+}
+.ytb-video {
+    aspect-ratio: 16/7;
+    position: relative;
+}
+
+.ytb-video iframe{
+    width: 100%;
+    height: 100%;
+}
+.about-para {
+    max-width: 34%;
+    margin: 0 auto;
+}
+.mt-48 {
+    margin-top: 48px;
+}
+.mt-100 {
+    margin-top: 100px;
 }
