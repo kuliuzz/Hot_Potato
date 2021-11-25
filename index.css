@@ -18,6 +18,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* HTML5 display definitions
@@ -294,6 +295,34 @@ h1, p, a {
 .about-img {
     display: none;
 }
+.modal {
+    z-index: 100;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    top: 60px;
+    display: none;
+}
+.modal span {
+    position: absolute;
+    background: var(--yellow);
+    color: black;
+    padding: 20px;
+    z-index: 10;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 21px;
+}
+.modal span:hover {
+    background: white;
+} 
 
 .glitch
   {
